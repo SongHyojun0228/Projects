@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('includes/head') %>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+
+  <body>
+    <%-include('includes/header') %>
+
+    <main>
+      <h1>My Clothes Web</h1>
+      <!-- 메인 화면 사진 -->
+      <div id="main-img">
+        <div id="carousel-example" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-example"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-example"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-example"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/sew1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/sew2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/sew.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-example"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-example"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <%-include('includes/footer') %>
+  </body>
+</html>

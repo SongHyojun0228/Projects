@@ -1,0 +1,149 @@
+#button-container {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.filter-btn {
+    background-color: white;
+    border: none;
+    color: rgb(75, 83, 32);
+    font-size: 1.3rem;
+}
+
+.filter-btn:hover {
+    color: rgb(9, 24, 58);
+}
+
+.line {
+    color: rgb(234, 207, 31);
+}
+
+/* #grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 80rem;
+}
+
+.grid-item {
+    text-align: center;
+    border: 1.5px solid rgb(107, 142, 35);
+    background-color: rgba(210, 180, 140, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.grid-item-img {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.grid-item a {
+    display: block;
+    color: rgb(75, 83, 32);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.grid-item:hover {
+    font-weight: bold;
+    background-color: rgba(210, 180, 140, 0.5);
+    border: 2px solid rgb(107, 142, 35);
+    cursor: pointer;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.link-text {
+    margin: 0.3rem 0;
+} */
+
+hr {
+    color: rgb(9, 24, 58);
+    width: 60%;
+    margin: 0 auto;
+}
+
+#clothes-item {
+    margin: 0.5rem;
+}
+
+#clothes-item:last-child {
+    /* 스타일 적용 */
+    margin-bottom: 1rem;
+}
+
+#cloth-site {
+    color: rgb(75, 83, 32);
+    text-decoration: none;
+}
+
+#cloth-site:hover {
+    color: rgb(234, 207, 31);
+}
+
+#line {
+    color: rgb(107, 142, 35);
+}
+
+#cloth-brand {
+    color: rgb(9, 24, 58);
+}
+
+.delete-btn {
+    border: none;
+    color: rgb(107, 142, 35);
+    background-color: white;
+}
+
+.delete-btn:hover {
+    color: rgb(234, 207, 31);
+    background-color: rgb(9, 24, 58);
+    border: 1px dashed rgb(234, 207, 31);
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#deleteWindow {
+    background-color: white;
+    display: none;
+    width: 35%;
+    margin: auto;
+    height: 10rem;
+    border: 4px solid rgb(75, 83, 32);
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#deleteWindow p {
+    margin-top: 1.5rem;   
+    color: rgb(75, 83, 32);
+}
+
+#deleteWindow button {
+    color: rgb(107, 142, 35);
+    border-color: rgb(107, 142, 35);
+}
+
+#deleteWindow button:hover {
+    font-weight: bold;
+    background-color: rgb(9, 24, 58);
+    color: rgb(234, 207, 31);
+    border: 1px dashed rgb(234, 207, 31);
+}

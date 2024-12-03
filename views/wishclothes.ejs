@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('includes/head') %>
+    <link rel="stylesheet" href="/styles/brand.css" />
+    <link rel="stylesheet" href="/styles/wishclothes.css" />
+    <script src="/scripts/deletecloth.js" defer></script>
+</head>
+  <body>
+    <%-include('includes/header') %>
+
+    <main>
+      <div id="button-container">
+        <button class="filter-btn">outer</button>
+        <span class="line"> | </span>
+        <button class="filter-btn">top</button>
+        <span class="line"> | </span>
+        <button class="filter-btn">bottom</button>
+        <span class="line"> | </span>
+        <button class="filter-btn">shoes</button>
+        <span class="line"> | </span>
+        <button class="filter-btn">acc</button>
+      </div>
+
+      <!-- <div id="grid-container">
+        <div class="grid-item">
+          <div class="grid-item-img">
+            <a href="https://artifacts.co.kr" target="_blank">
+              <img src="/images/brand/artifact.jpg" alt="IMG" />
+            </a>
+          </div>
+          <a href="https://artifacts.co.kr" target="_blank" class="link-text"
+            >Art if acts</a
+          >
+        </div>
+      </div> -->
+
+      <hr>
+      <div id="clothes">
+        <% for(const cloth of clothes) { %>
+            <div id="clothes-item">
+                <a href="<%= cloth.site %>" id="cloth-site">
+                <%= cloth.product_name%> <span id="line">|</span>
+                <span id="cloth-brand"><%= cloth.brand %></span>
+                </a>
+                <button class="delete-btn" data-id="<%= cloth._id%>">
+                X
+                </button>
+                <br />
+            </div>
+        <% } %>
+      </div>
+
+      <div id="deleteWindow">
+        <p>Do you want to delete?</p>
+        <button id="confirmDeletebtn">delete</button>
+        <button id="cancelDeletebtn">cancel</button>
+      </div>
+    </main>
+
+    <%-include('includes/footer') %>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "progect1",
+  "version": "1.0.0",
+  "description": "산업체 포트폴리오 준비",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SongHyojun0228/Project_1.git"
+  },
+  "author": "송효준",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SongHyojun0228/Project_1/issues"
+  },
+  "homepage": "https://github.com/SongHyojun0228/Project_1#readme",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "cheerio": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

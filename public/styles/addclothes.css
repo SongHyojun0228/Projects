@@ -1,0 +1,93 @@
+h2 {
+    margin-top: 2rem;
+    color: rgb(75, 83, 32);
+    font-weight: bold;
+}
+
+#add-form {
+    background-color: rgba(210, 180, 140, 0.2);
+    width: 60%;
+    margin: 2rem auto;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    clip-path: polygon(
+        60px 0px, calc(100% - 60px) 0px, /* 윗부분 */
+        100% 60px, 100% calc(100% - 60px), /* 오른쪽 부분 */
+        calc(100% - 60px) 100%, 60px 100%, /* 아랫부분 */
+        0px calc(100% - 60px), 0px 60px /* 왼쪽 부분 */
+    );
+    font-family: inherit;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: rgb(75, 83, 32);
+}
+
+input {
+    margin-bottom: 2rem;
+    padding-inline: 1rem;
+    width: 50%;
+    height: 2.7rem;
+}
+
+select {
+    margin-bottom: 2rem;
+    width: 50%;
+    height: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(9, 24, 58);
+}
+
+button {
+    display: block;
+    width: 20%;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    background-color: rgb(107, 142, 35);
+    color: rgb(234, 207, 31);
+    border: none;
+    clip-path: polygon(
+        10px 0px, calc(100% - 10px) 0px, /* 윗부분 */
+        100% 10px, 100% calc(100% - 10px), /* 오른쪽 부분 */
+        calc(100% - 10px) 100%, 10px 100%, /* 아랫부분 */
+        0px calc(100% - 10px), 0px 10px /* 왼쪽 부분 */
+    );
+}
+
+button:hover {
+    background-color: rgb(9, 24, 58);
+    border: 2px dashed rgb(234, 207, 31);
+}
+
+#octagon {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+  }
+  #octagon:before {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+  }
+  #octagon:after {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+  }
